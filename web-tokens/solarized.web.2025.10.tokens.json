@@ -1,0 +1,270 @@
+{
+  "$schema": "https://www.designtokens.org/TR/2025.10/format/schema.json",
+  "id": "https://github.com/altercation/solarized/web-tokens/solarized.web.2025.10.tokens.json",
+  "description": "Solarized color palette and generic light/dark roles as a web-oriented design token resource. Based on Ethan Schoonover's canonical Solarized scheme.",
+
+  "color": {
+    "$type": "color",
+
+    "palette": {
+      "$type": "color",
+      "$description": "Canonical Solarized 16-color palette (8 monotones, 8 accents).",
+
+      "base03": {
+        "$type": "color",
+        "$description": "Darkest base tone.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0, 43, 54],
+          "hex": "#002b36"
+        }
+      },
+      "base02": {
+        "$type": "color",
+        "$description": "Very dark base tone.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [7, 54, 66],
+          "hex": "#073642"
+        }
+      },
+      "base01": {
+        "$type": "color",
+        "$description": "Dark UI text / subtle foreground.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [88, 110, 117],
+          "hex": "#586e75"
+        }
+      },
+      "base00": {
+        "$type": "color",
+        "$description": "Primary dark text tone.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [101, 123, 131],
+          "hex": "#657b83"
+        }
+      },
+      "base0": {
+        "$type": "color",
+        "$description": "Primary light text tone.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [131, 148, 150],
+          "hex": "#839496"
+        }
+      },
+      "base1": {
+        "$type": "color",
+        "$description": "Light UI text / subtle foreground.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [147, 161, 161],
+          "hex": "#93a1a1"
+        }
+      },
+      "base2": {
+        "$type": "color",
+        "$description": "Light surface background.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [238, 232, 213],
+          "hex": "#eee8d5"
+        }
+      },
+      "base3": {
+        "$type": "color",
+        "$description": "Lightest base tone.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [253, 246, 227],
+          "hex": "#fdf6e3"
+        }
+      },
+
+      "yellow": {
+        "$type": "color",
+        "$description": "Accent: yellow.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [181, 137, 0],
+          "hex": "#b58900"
+        }
+      },
+      "orange": {
+        "$type": "color",
+        "$description": "Accent: orange.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [203, 75, 22],
+          "hex": "#cb4b16"
+        }
+      },
+      "red": {
+        "$type": "color",
+        "$description": "Accent: red.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [220, 50, 47],
+          "hex": "#dc322f"
+        }
+      },
+      "magenta": {
+        "$type": "color",
+        "$description": "Accent: magenta.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [211, 54, 130],
+          "hex": "#d33682"
+        }
+      },
+      "violet": {
+        "$type": "color",
+        "$description": "Accent: violet.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [108, 113, 196],
+          "hex": "#6c71c4"
+        }
+      },
+      "blue": {
+        "$type": "color",
+        "$description": "Accent: blue.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [38, 139, 210],
+          "hex": "#268bd2"
+        }
+      },
+      "cyan": {
+        "$type": "color",
+        "$description": "Accent: cyan.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [42, 161, 152],
+          "hex": "#2aa198"
+        }
+      },
+      "green": {
+        "$type": "color",
+        "$description": "Accent: green.",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [133, 153, 0],
+          "hex": "#859900"
+        }
+      }
+    },
+
+    "role": {
+      "$type": "color",
+      "$description": "Generic light/dark roles for web-oriented UIs (backgrounds, foregrounds, borders, accents).",
+
+      "background": {
+        "$type": "color",
+        "$description": "High-level background roles for light and dark variants.",
+
+        "default": {
+          "$type": "color",
+          "$description": "Primary page background.",
+          "$value": {
+            "light": "{color.palette.base3}",
+            "dark": "{color.palette.base03}"
+          }
+        },
+        "subtle": {
+          "$type": "color",
+          "$description": "Secondary surfaces layered on top of the default background.",
+          "$value": {
+            "light": "{color.palette.base2}",
+            "dark": "{color.palette.base02}"
+          }
+        }
+      },
+
+      "foreground": {
+        "$type": "color",
+        "$description": "Generic foreground (text / icon) roles.",
+
+        "default": {
+          "$type": "color",
+          "$description": "Primary text color.",
+          "$value": {
+            "light": "{color.palette.base00}",
+            "dark": "{color.palette.base0}"
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$description": "Secondary / muted text.",
+          "$value": {
+            "light": "{color.palette.base1}",
+            "dark": "{color.palette.base01}"
+          }
+        },
+        "inverse": {
+          "$type": "color",
+          "$description": "Text on strong or accent backgrounds.",
+          "$value": {
+            "light": "{color.palette.base03}",
+            "dark": "{color.palette.base3}"
+          }
+        }
+      },
+
+      "border": {
+        "$type": "color",
+        "$description": "Neutral border roles.",
+
+        "subtle": {
+          "$type": "color",
+          "$description": "Dividers, subtle outlines.",
+          "$value": {
+            "light": "{color.palette.base2}",
+            "dark": "{color.palette.base02}"
+          }
+        },
+        "strong": {
+          "$type": "color",
+          "$description": "Stronger outlines and focus indicators.",
+          "$value": {
+            "light": "{color.palette.base1}",
+            "dark": "{color.palette.base01}"
+          }
+        }
+      },
+
+      "accent": {
+        "$type": "color",
+        "$description": "Generic accent roles mapped to Solarized chromatic colors.",
+
+        "primary": {
+          "$type": "color",
+          "$description": "Primary accent color for interactive elements.",
+          "$value": "{color.palette.blue}"
+        },
+        "success": {
+          "$type": "color",
+          "$description": "Positive / success indication.",
+          "$value": "{color.palette.green}"
+        },
+        "warning": {
+          "$type": "color",
+          "$description": "Warning / caution indication.",
+          "$value": "{color.palette.yellow}"
+        },
+        "danger": {
+          "$type": "color",
+          "$description": "Error / destructive indication.",
+          "$value": "{color.palette.red}"
+        },
+        "info": {
+          "$type": "color",
+          "$description": "Informational accents.",
+          "$value": "{color.palette.cyan}"
+        }
+      }
+    }
+  }
+}
