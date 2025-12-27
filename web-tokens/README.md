@@ -1,4 +1,3 @@
-
 # Solarized Web Tokens
 
 This folder contains a web‑oriented Design Tokens resource for the Solarized color scheme, expressed using the Design Tokens Community Group (DTCG) Format Module 2025.10 and Resolver Module 2025.10 ([1][4][5]).
@@ -31,16 +30,9 @@ The goal of this resource is to:
 - **`solarized.resolver.json`**  
   DTCG 2025.10 Resolver that binds `light` and `dark` contexts to the multi-theme file ([5]). Use this for full context-aware token resolution in DTCG-compliant tools and build pipelines. Enables dynamic theme switching and modular token composition.
 
-### Scripts and assets
+### Assets
 
-- **`generate_solarized_swatches.py`**  
-  Python script to generate color swatch PNG images into `/assets`. Run from this folder:  
-  ```
-  pip install pillow
-  python generate_solarized_swatches.py
-  ```
-
-- **`/assets/`**  
+- **`/doc-assets/`**
   Contains 16 PNG swatch images (one per Solarized color) for visual reference in documentation, design tools, and web previews.
 
 ## DTCG 2025.10 adherence
@@ -273,12 +265,13 @@ Modern design systems rely on DTCG-compliant tooling to manage, transform, and d
 4. Theme switching in Figma is automatic: publish one file, switch theme context, and all components update.
 
 **Example workflow**:
+
 - Create a Figma file with "Light" and "Dark" variable groups.
 - Import Solarized tokens into these groups.
 - Build components that reference variables (e.g., `fill: var(--color-background-default)`).
 - Toggle theme mode in Figma to see live theme switching.
 
-#### Adobe XD, Sketch, etc.
+#### Adobe XD, Sketch, etc
 
 Similar workflows apply. Most modern design tools support JSON token import and variable/style binding.
 
@@ -316,6 +309,7 @@ module.exports = {
 ```
 
 **Output**:
+
 ```
 /* tokens.light.css */
 :root {

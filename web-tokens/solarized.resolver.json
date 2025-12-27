@@ -3,7 +3,6 @@
   "name": "Solarized Web Multi-Theme Resolver",
   "version": "2025.10",
   "description": "Resolver for Solarized Light and Solarized Dark themes using DTCG 2025.10. Contexts: light, dark.",
-
   "sets": {
     "palette": {
       "description": "Canonical Solarized 16-color palette (theme-agnostic).",
@@ -30,24 +29,30 @@
       ]
     }
   },
-
   "modifiers": {
     "theme": {
       "description": "Theme context modifier: select light or dark roles.",
       "contexts": {
         "light": [
-          { "ref": "sets.palette" },
-          { "ref": "sets.light-theme" }
+          {
+            "ref": "sets.palette"
+          },
+          {
+            "ref": "sets.light-theme"
+          }
         ],
         "dark": [
-          { "ref": "sets.palette" },
-          { "ref": "sets.dark-theme" }
+          {
+            "ref": "sets.palette"
+          },
+          {
+            "ref": "sets.dark-theme"
+          }
         ]
       },
       "default": "light"
     }
   },
-
   "resolutionOrder": [
     {
       "type": "set",

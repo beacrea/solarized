@@ -1,7 +1,21 @@
 Solarized Changelog
 ===================
 
-## Current release 1.0.0beta2
+## Current release 1.0.0beta3 (unreleased)
+
+1.0.0beta3 (unreleased)
+-----------------------
+
+### Summary
+
+Added modern design token format following DTCG 2025.10 specification.
+
+#### Design Systems & Tokens
+
+* [NEW] **Design Tokens (DTCG)** — Web-oriented token resource with semantic
+  role mappings, light/dark theme support, and resolver-driven context
+  switching. Supports Style Dictionary, Figma Variables, and DTCG-compliant
+  tooling. Located in `web-tokens/`.
 
 1.0.0beta2
 ----------

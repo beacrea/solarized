@@ -89,6 +89,15 @@ Currently available in formats for (cf [screenshots](#screenshots) below):
 * **Apple Color Picker** Palettes
 * **GIMP** Palette
 
+### Design Systems & Tokens
+
+* **Design Tokens (DTCG)** — modern web-oriented token format following the
+  Design Tokens Community Group 2025.10 specification. Includes semantic role
+  mappings for light/dark themes, resolver-driven context switching, and
+  multi-format variants (single-theme, multi-theme, resolver). Supports Style
+  Dictionary, Figma Variables, and other DTCG-compliant tooling. See the
+  [web-tokens README](./web-tokens/README.md) for usage and integration patterns.
+
 Don't see the application you want to use it in? Download the palettes (or pull
 the values from the table below) and create your own. Submit it back and I'll
 happily note the contribution and include it on this page.  See also the
