@@ -1,0 +1,61 @@
+{
+  "$schema": "https://www.designtokens.org/TR/2025.10/resolver/schema.json",
+  "name": "Solarized Web Multi-Theme Resolver",
+  "version": "2025.10",
+  "description": "Resolver for Solarized Light and Solarized Dark themes using DTCG 2025.10. Contexts: light, dark.",
+
+  "sets": {
+    "palette": {
+      "description": "Canonical Solarized 16-color palette (theme-agnostic).",
+      "sources": [
+        {
+          "ref": "./solarized.multi-theme.tokens.json#/color/palette"
+        }
+      ]
+    },
+    "light-theme": {
+      "description": "Solarized Light roles and semantics.",
+      "sources": [
+        {
+          "ref": "./solarized.multi-theme.tokens.json#/color/theme/light"
+        }
+      ]
+    },
+    "dark-theme": {
+      "description": "Solarized Dark roles and semantics.",
+      "sources": [
+        {
+          "ref": "./solarized.multi-theme.tokens.json#/color/theme/dark"
+        }
+      ]
+    }
+  },
+
+  "modifiers": {
+    "theme": {
+      "description": "Theme context modifier: select light or dark roles.",
+      "contexts": {
+        "light": [
+          { "ref": "sets.palette" },
+          { "ref": "sets.light-theme" }
+        ],
+        "dark": [
+          { "ref": "sets.palette" },
+          { "ref": "sets.dark-theme" }
+        ]
+      },
+      "default": "light"
+    }
+  },
+
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "name": "palette"
+    },
+    {
+      "type": "modifier",
+      "name": "theme"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://www.designtokens.org/TR/2025.10/format/schema.json",
+  "id": "https://github.com/altercation/solarized/web-tokens/solarized.light.tokens.json",
+  "description": "Solarized Light palette and roles for single-theme consumption (DTCG 2025.10).",
+
+  "color": {
+    "$type": "color",
+
+    "palette": {
+      "$type": "color",
+      "$description": "Canonical Solarized palette.",
+      "base03": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [0, 43, 54], "hex": "#002b36" } },
+      "base02": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [7, 54, 66], "hex": "#073642" } },
+      "base01": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [88, 110, 117], "hex": "#586e75" } },
+      "base00": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [101, 123, 131], "hex": "#657b83" } },
+      "base0":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [131, 148, 150], "hex": "#839496" } },
+      "base1":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [147, 161, 161], "hex": "#93a1a1" } },
+      "base2":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [238, 232, 213], "hex": "#eee8d5" } },
+      "base3":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [253, 246, 227], "hex": "#fdf6e3" } },
+
+      "yellow":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [181, 137, 0], "hex": "#b58900" } },
+      "orange":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [203, 75, 22], "hex": "#cb4b16" } },
+      "red":     { "$type": "color", "$value": { "colorSpace": "srgb", "components": [220, 50, 47], "hex": "#dc322f" } },
+      "magenta": { "$type": "color", "$value": { "colorSpace": "srgb", "components": [211, 54, 130], "hex": "#d33682" } },
+      "violet":  { "$type": "color", "$value": { "colorSpace": "srgb", "components": [108, 113, 196], "hex": "#6c71c4" } },
+      "blue":    { "$type": "color", "$value": { "colorSpace": "srgb", "components": [38, 139, 210], "hex": "#268bd2" } },
+      "cyan":    { "$type": "color", "$value": { "colorSpace": "srgb", "components": [42, 161, 152], "hex": "#2aa198" } },
+      "green":   { "$type": "color", "$value": { "colorSpace": "srgb", "components": [133, 153, 0], "hex": "#859900" } }
+    },
+
+    "role": {
+      "$type": "color",
+      "$description": "Solarized Light semantic roles.",
+
+      "background": {
+        "$type": "color",
+        "default": { "$type": "color", "$value": "{color.palette.base3}" },
+        "subtle":  { "$type": "color", "$value": "{color.palette.base2}" }
+      },
+
+      "foreground": {
+        "$type": "color",
+        "default": { "$type": "color", "$value": "{color.palette.base00}" },
+        "muted":   { "$type": "color", "$value": "{color.palette.base1}" },
+        "inverse": { "$type": "color", "$value": "{color.palette.base03}" }
+      },
+
+      "border": {
+        "$type": "color",
+        "subtle": { "$type": "color", "$value": "{color.palette.base2}" },
+        "strong": { "$type": "color", "$value": "{color.palette.base1}" }
+      },
+
+      "accent": {
+        "$type": "color",
+        "primary": { "$type": "color", "$value": "{color.palette.blue}" },
+        "success": { "$type": "color", "$value": "{color.palette.green}" },
+        "warning": { "$type": "color", "$value": "{color.palette.yellow}" },
+        "danger":  { "$type": "color", "$value": "{color.palette.red}" },
+        "info":    { "$type": "color", "$value": "{color.palette.cyan}" }
+      }
+    }
+  }
+}
